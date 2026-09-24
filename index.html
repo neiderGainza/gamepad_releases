@@ -56,7 +56,8 @@
             <p>Turn your Android phone into a customizable game controller.</p>
             <div class="android-warning"><strong>Important:</strong> This APK is not yet published on Google Play. Android may warn that it could be malicious because it was installed outside the Play Store. Only install it if you trust this source.</div>
             <div class="tile-actions">
-              <a class="download-link" href="android_client/gamepad_mobile-arm64-v8a.apk" download>Download arm64-v8a APK <span aria-hidden="true">↓</span></a>
+              <a class="download-link" href="android_client/gamepad_mobile-arm64-v8a.apk" download><span>Download arm64-v8a APK</span><span aria-hidden="true">↓</span></a>
+              <a class="download-link" href="android_client/gamepad_mobile-v7a.apk" download><span>Download armeabi-v7a APK</span><span aria-hidden="true">↓</span></a>
               <span class="coming-soon">Google Play Store — Coming soon</span>
             </div>
           </div>
@@ -69,7 +70,23 @@
           <summary><span class="tile-number">03</span><span class="tile-title">Download for Linux</span><span class="tile-status">Available <span class="tile-arrow" aria-hidden="true">↘</span></span></summary>
           <div class="tile-panel">
             <p>Run the server on Linux and connect your phone over Wi-Fi, Bluetooth, or cable.</p>
-            <a class="download-link" href="gamepad_server/gamepad-server-dev-0.0.1-x86_64.tar.gz" download>Download Linux server <span aria-hidden="true">↓</span></a>
+            <div class="package-list">
+              <div class="package-option">
+                <div class="package-heading"><strong>Debian / Ubuntu</strong><span>.deb</span></div>
+                <a class="download-link" href="linux/gamepad_0.0.1-2_amd64.deb" download><span>Download DEB</span><span aria-hidden="true">↓</span></a>
+                <code>sudo dpkg -i gamepad_0.0.1-2_amd64.deb</code>
+              </div>
+              <div class="package-option">
+                <div class="package-heading"><strong>Fedora / RHEL</strong><span>.rpm</span></div>
+                <a class="download-link" href="linux/gamepad-0.0.1-2.x86_64.rpm" download><span>Download RPM</span><span aria-hidden="true">↓</span></a>
+                <code>sudo rpm -i gamepad-0.0.1-2.x86_64.rpm</code>
+              </div>
+              <div class="package-option">
+                <div class="package-heading"><strong>Arch Linux</strong><span>.pkg.tar.zst</span></div>
+                <a class="download-link" href="linux/gamepad-0.0.1-2-x86_64.pkg.tar.zst" download><span>Download Arch package</span><span aria-hidden="true">↓</span></a>
+                <code>sudo pacman -U gamepad-0.0.1-2-x86_64.pkg.tar.zst</code>
+              </div>
+            </div>
           </div>
         </details>
         <details class="download-tile">

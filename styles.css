@@ -74,9 +74,16 @@ h2 { font-size: clamp(32px, 4vw, 52px); letter-spacing: -.07em; line-height: 1; 
 .android-warning { background: rgba(255, 119, 87, .12); border-left: 3px solid var(--orange); font-size: 12px; line-height: 1.5; margin: 0 0 20px; max-width: 700px; padding: 12px 15px; }
 .android-warning strong { color: var(--orange); }
 .download-link, .coming-soon { font-family: 'DM Mono', monospace; font-size: 10px; text-transform: uppercase; }
-.download-link { border-bottom: 1px solid currentColor; padding-bottom: 4px; }
-.download-link span { color: var(--orange); font-size: 15px; margin-left: 8px; }
+.download-link { align-items: center; background: var(--orange); box-shadow: 5px 5px 0 var(--ink); color: var(--ink); display: inline-flex; font-weight: 500; gap: 18px; padding: 13px 15px; transition: background 180ms ease, box-shadow 180ms ease, transform 180ms ease; }
+.download-link:hover { background: var(--lime); box-shadow: 2px 2px 0 var(--ink); transform: translate(3px, 3px); }
+.download-link span:last-child { font-size: 15px; line-height: .7; }
 .coming-soon { color: var(--muted); }
+.package-list { display: grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.package-option { border: 1px solid var(--line); display: flex; flex-direction: column; gap: 14px; padding: 17px; }
+.package-heading { align-items: baseline; display: flex; gap: 8px; justify-content: space-between; }
+.package-heading strong { font-size: 15px; }
+.package-heading span { color: var(--muted); font-family: 'DM Mono', monospace; font-size: 9px; text-transform: uppercase; }
+.package-option code { background: rgba(23, 27, 29, .07); color: var(--ink); font-family: 'DM Mono', monospace; font-size: 10px; line-height: 1.5; overflow-wrap: anywhere; padding: 9px; }
 .footer { border-top: 1px solid var(--line); display: flex; font-family: 'DM Mono', monospace; font-size: 10px; justify-content: space-between; padding: 22px 0 30px; text-transform: uppercase; }
 
 @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
@@ -102,5 +109,6 @@ h2 { font-size: clamp(32px, 4vw, 52px); letter-spacing: -.07em; line-height: 1; 
   .tile-status { grid-column: 2; }
   .tile-arrow { margin-left: 8px; }
   .tile-panel { margin-left: 30px; }
+  .package-list { grid-template-columns: 1fr; }
   .footer { flex-direction: column; gap: 12px; }
 }
