@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convierte tu móvil en un mando Xbox para jugar en tu ordenador con Mobile GamePad.">
+  <title>Mobile GamePad | Descargas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <nav class="topbar" aria-label="Navegación principal">
+      <a class="brand" href="./" aria-label="Inicio de Mobile GamePad">
+        <img src="src/icon.png" alt="">
+        <span>Mobile GamePad</span>
+      </a>
+      <a class="topbar-link" href="#downloads">Descargas <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Tu móvil. Tu mando.</p>
+        <h1 id="hero-title">Convierte tu móvil en un <em>mando Xbox.</em></h1>
+        <p class="hero-text">Juega en tu ordenador usando el móvil como mando, estés donde estés.</p>
+
+        <ul class="feature-list">
+          <li><span class="feature-number">01</span><span>Conéctate por Wi-Fi, Bluetooth o cable.</span></li>
+          <li><span class="feature-number">02</span><span>App para Android e iOS; servidor para Linux y Windows.</span></li>
+          <li><span class="feature-number">03</span><span>Elige entre distintos tipos de mando y personaliza los controles.</span></li>
+          <li><span class="feature-number">04</span><span>El mando virtual también es compatible con vibración.</span></li>
+        </ul>
+
+        <a class="primary-button" href="#downloads">Descargar <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <div class="hero-art" aria-label="Vista previa de Mobile GamePad">
+        <div class="art-grid"></div>
+        <div class="art-card">
+          <div class="art-card-top"><span>CONECTADO</span><span class="live-dot"></span></div>
+          <img src="src/icon.png" alt="Mobile GamePad controller icon">
+          <div class="art-card-bottom"><strong>Mobile GamePad</strong><span>LISTO PARA JUGAR</span></div>
+        </div>
+        <div class="art-caption"><span class="caption-line"></span><span>Un móvil<br>muchas formas de jugar</span></div>
+      </div>
+    </section>
+
+    <section class="downloads" id="downloads" aria-labelledby="downloads-title">
+      <div class="section-heading">
+        <p class="eyebrow">Elige tu plataforma</p>
+        <h2 id="downloads-title">Empieza a jugar en minutos.</h2>
+      </div>
+      <div class="download-tiles">
+        <details class="download-tile">
+          <summary><span class="tile-number">01</span><span class="tile-title">Android</span><span class="tile-status">Próximamente <span class="tile-arrow" aria-hidden="true">↘</span></span></summary>
+          <div class="tile-panel">
+            <p>Convierte tu móvil Android en un mando personalizable para el ordenador.</p>
+            <div class="android-warning"><strong>Importante:</strong> Este APK todavía no está publicado en Google Play. Android puede mostrar avisos al instalar aplicaciones externas.</div>
+            <div class="tile-actions">
+              <span class="coming-soon">Google Play — Próximamente</span>
+            </div>
+          </div>
+        </details>
+        <details class="download-tile">
+          <summary><span class="tile-number">02</span><span class="tile-title">iOS</span><span class="tile-status">Próximamente <span class="tile-arrow" aria-hidden="true">↘</span></span></summary>
+          <div class="tile-panel"><p>La app para iOS está en preparación.</p><span class="coming-soon">App Store — Próximamente</span></div>
+        </details>
+        <details class="download-tile">
+          <summary><span class="tile-number">03</span><span class="tile-title">Linux</span><span class="tile-status">Disponible <span class="tile-arrow" aria-hidden="true">↘</span></span></summary>
+          <div class="tile-panel">
+            <p>Ejecuta el servidor en Linux y conecta tu móvil por Wi-Fi, Bluetooth o cable.</p>
+            <div class="package-list">
+              <div class="package-option">
+                <div class="package-heading"><strong>Debian / Ubuntu</strong><span>.deb</span></div>
+                <a class="download-link" href="https://github.com/neiderGainza/mobile_gamepad/releases/latest/download/mobile-gamepad-linux-amd64.deb"><span>Descargar DEB</span><span aria-hidden="true">↓</span></a>
+                <code>sudo dpkg -i mobile-gamepad-linux-amd64.deb</code>
+              </div>
+              <div class="package-option">
+                <div class="package-heading"><strong>Fedora / RHEL</strong><span>.rpm</span></div>
+                <a class="download-link" href="https://github.com/neiderGainza/mobile_gamepad/releases/latest/download/mobile-gamepad-linux-x86_64.rpm"><span>Descargar RPM</span><span aria-hidden="true">↓</span></a>
+                <code>sudo rpm -i mobile-gamepad-linux-x86_64.rpm</code>
+              </div>
+              <div class="package-option">
+                <div class="package-heading"><strong>Arch Linux</strong><span>.pkg.tar.zst</span></div>
+                <a class="download-link" href="https://github.com/neiderGainza/mobile_gamepad/releases/latest/download/mobile-gamepad-linux-x86_64.pkg.tar.zst"><span>Descargar paquete Arch</span><span aria-hidden="true">↓</span></a>
+                <code>sudo pacman -U mobile-gamepad-linux-x86_64.pkg.tar.zst</code>
+              </div>
+            </div>
+          </div>
+        </details>
+        <details class="download-tile">
+          <summary><span class="tile-number">04</span><span class="tile-title">Windows</span><span class="tile-status">Disponible <span class="tile-arrow" aria-hidden="true">↘</span></span></summary>
+          <div class="tile-panel">
+            <p>Sigue estos pasos para instalar el servidor y conectar tu móvil como mando Xbox.</p>
+            <div class="android-warning"><strong>Opciones de descarga:</strong> ofrecemos la instalación desde Microsoft Store (recomendada, cuando esté disponible) y la descarga del instalador desde fuera de la Store. La descarga e instalación externa puede provocar advertencias o bloqueos de Microsoft Defender o SmartScreen. Por ahora, descarga el instalador únicamente desde nuestras releases oficiales.</div>
+            <ol class="windows-steps">
+              <li>
+                <strong>Instala ViGEmBus</strong>
+                <p>Es el controlador que permite crear un mando Xbox virtual. ViGEmBus no se distribuye desde Microsoft Store: descárgalo desde su página oficial.</p>
+                <div class="tile-actions">
+                  <a class="download-link" href="https://github.com/nefarius/ViGEmBus/releases/download/v1.22.0/ViGEmBus_1.22.0_x64_x86_arm64.exe" target="_blank" rel="noopener noreferrer"><span>Descargar instalador ViGEmBus</span><span aria-hidden="true">↓</span></a>
+                  <a class="download-link" href="https://github.com/nefarius/ViGEmBus/releases" target="_blank" rel="noopener noreferrer"><span>Ver página oficial de descargas</span><span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="coming-soon">Nota: ViGEmBus fue archivado por sus desarrolladores; esta es su última versión oficial.</p>
+              </li>
+              <li>
+                <strong>Instala Mobile GamePad</strong>
+                <p>Descarga y ejecuta el instalador. La versión de Microsoft Store es la opción recomendada cuando esté publicada; por ahora está pendiente.</p>
+                <div class="tile-actions">
+                  <a class="download-link" href="https://github.com/neiderGainza/mobile_gamepad/releases/latest/download/MobileGamePad-Setup.exe"><span>Descargar instalador</span><span aria-hidden="true">↓</span></a>
+                  <span class="coming-soon">Microsoft Store — Próximamente (recomendado)</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer"><span>Mobile GamePad</span><span>Para cuando el mando no está a mano.</span></footer>
+  </main>
+</body>
+</html>
